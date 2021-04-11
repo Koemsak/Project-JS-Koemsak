@@ -1,0 +1,282 @@
+body {
+    font-family: sans-serif;
+    background: #e0cb0760;
+}
+
+.search-box {
+    width: 40%;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+}
+.card ul {
+    list-style: none;
+}
+.card ul li {
+    position: relative;
+    display: inline-block;
+    background: #646464;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 3px 3px #00000098;
+    border-radius: 4px;
+    margin-top: 20px;
+    color: white;
+}
+.card ul li .item {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    display: flex;
+    justify-content: space-between;
+}
+.publisedDate {
+    color: orange;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.btnD {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.icon {
+    display: flex;
+    justify-content: space-around;
+}
+.purchesedDate {
+    color: orange;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.btnD .btn-delete {
+    color: lavender;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btnD .btn-icon {
+    color: #1eff00;
+    cursor: pointer;
+}
+
+/* ----------------------------------------Find Book---------------------------------------- */
+
+.findBook {
+    width: 80%;
+    background: #28ccbe83;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 100px;
+}
+.findBook h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.onNovel {
+    background: teal;
+    padding: 40px 20px 40px 20px;
+    margin: auto;
+    margin-top: 20px;
+    width: 60%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.onNovel h1 {
+    font-size: 38px;
+    color: white;
+}
+
+.btn-add {
+    background: white;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.btn-add button {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    background: #06815c;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 1px 10px 10px -2px #00000070;
+}
+/* modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    padding-top: 30px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #101013f5;
+}
+
+/* modal header */ 
+.modal-header {
+    padding: 2px 16px;
+    margin-bottom: 10px;
+    background: teal;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    text-transform: uppercase;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+/* modal body */
+.modal-body {
+    padding: 2px 16px 20px 16px;
+}
+
+
+/* modal content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border-radius: 10px;
+    width: 50%; /* could be more or less, depending on the screen size */
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    animation-name: animatetop;
+    animation-duration: 0.9s;
+} 
+
+/* add animation */
+@keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+}
+
+
+/* the close button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.close:hover {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-input {
+    width: 96%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    outline: none;
+    font-family: Overpass;
+}
+
+.form-label {
+    font-size: 14px;
+    font-family: Overpass, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.submit-button {
+  width: 80px;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-right: 15px;
+  color: #fff;
+  font-family: Overpass, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background: #0d5fda;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 5px 10px -4px black;
+}
+.update-button {
+    width: 80px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-right: 15px;
+    color: #fff;
+    font-family: Overpass, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: #f88807;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px -4px black;
+}
+
+.card ul li .tooltip {    
+    display: none;
+    width: 400px;
+    margin-left: 400px;
+    margin-top: 25px;
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    border: 1px solid black;
+      /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.category {
+    display: flex;
+}
+
+
+.color {
+    background: red;
+    padding: 10px;
+    margin-left: 10px;
+}
+#subject {
+    margin-left: 10px;
+}
+/* ------warning */
+.warning{
+    color: red;
+    font-size: 13px;
+    display: none;
+}
